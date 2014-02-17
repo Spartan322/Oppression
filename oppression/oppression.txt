@@ -1,0 +1,43 @@
+"Oppression"
+{
+	"base"		"base"
+	"title"		"Oppression"
+	"maps"		"^opp_"
+	"menusystem"	"1"
+	"workshopid"	""
+
+	"settings"
+	{
+		1
+		{
+			"name"		"opp_feds_mx"
+			"text"		"Max Federals"
+			"help"		"The maxiumum number of Federal Agents"
+			"type"		"numeric"
+			"default"	"8"
+		}
+
+
+		
+		2
+		{
+			"name"		"opp_frendfire"
+			"text"		"Friendly Fire"
+			"help"		"Check whether Friendly Fire is enabled"
+			"type"		"checkbox"
+			"default"	"1"
+		}
+
+
+		
+		3
+		{
+			"name"		"opp_opprespeed"
+			"text"		"Oppression Speed"
+			"help"		"The speed the game automatically uses to Oppress in seconds"
+			"type"		"numeric"
+			"default"	"60"
+		}
+	}
+
+}
