@@ -1,4 +1,4 @@
-#Oppresion
+#Oppression
 
 A new strategy related gamemode
 
