@@ -12,6 +12,7 @@ end
 
 function GM:PlayerInitialSpawn( ply )
 	print(ply:Nick() .. "'s entity has spawned for the first time on this map.")
+	con:AddText(ply:Nick() .. "'s entity has spawned for the first time on this map at " .. con:GetRoundTime())
 	ply:SetGamemodeTeam( 0 )
 end
 
@@ -19,6 +20,7 @@ function GM:PlayerSpawn( ply )
 
 	ply:SetTeamDefaultModel(ply:Team())
 	ply:SetTeamWeapons()
+	con:AddText(ply:Nick() .. " has respawned at " .. con:GetRoundTime())
 end
 
 function GM:PlayerAuthed( ply, steamID, uniqueID )
