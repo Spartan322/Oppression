@@ -28,6 +28,12 @@ The Feds need to disrupt the Resistance through missions and objectives or keep 
 ###Resistance Members
 The Resistance Members have a similar goal as the Feds but directed at the Feds. They must also setup infiltration teams for the Feds. The Resitance can infiltrate and squash the Feds from the inside as well. They also gain points by taking objectives from the Feds.
 
+#Install
+
+1. Download the git zip (recommend Zip)
+2. Extract the the folder inside the folder in the zip to your Garry's Mod Gamemode folder
+3. Start your game
+4. **ENJOY**
 
 #Warning
 
