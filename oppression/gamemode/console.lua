@@ -1,6 +1,6 @@
 con = {}
 con.text = ""
-con.rtime = 30
+con.rtime = Round:GetTime()
 
 function con:AddText(text)
 	con.text += "[" .. con:GetRoundTime() .. "]" .. ": " .. text .. "\n"
