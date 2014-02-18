@@ -32,6 +32,9 @@ The Resistance Members have a similar goal as the Feds but directed at the Feds.
 
 1. Download the git zip (recommend Zip)
 2. Extract the the folder inside the folder in the zip to your Garry's Mod Gamemode folder
+
+- Zip  >  Oppression Folder  >  Oppression Gamemode folder (extract this folder to Garry's Mod Gamemode Folder)
+
 3. Start your game
 4. **ENJOY**
 
