@@ -1,5 +1,6 @@
 AddCSLuaFile( "cl_init.lua" )
 AddCSLuaFile( "shared.lua" )
+AddCSLuaFile( "vgui/*.lua" )
 AddCSLuaFile("database/cl_database")
 
 include( "shared.lua" )
