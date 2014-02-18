@@ -1,2 +1,3 @@
 include( "shared.lua" )
-include("database/cl_database")
+include( "vgui/hud_base.lua" )
+include( "database/cl_database" )
