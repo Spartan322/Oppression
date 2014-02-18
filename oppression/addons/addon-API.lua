@@ -23,7 +23,8 @@ function GetAddons()
 			AddAddon(directories[v])
 			local innerfiles, innerdirectories = file.Find("gamemode/oppression/addons/" .. directories[v], "GAME")
 			if innerfiles and innerdirectories then
-			include(directories[v] .. "/base/init"
+				include(directories[v] .. "/base/init")
+			end
 		end
 	end
 end
