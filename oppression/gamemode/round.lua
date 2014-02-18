@@ -21,3 +21,7 @@ end
 Round:AddRound(rounds)
     self.round += rounds
 end
+
+Round:GetRound()
+    return self.round
+end
