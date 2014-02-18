@@ -5,6 +5,8 @@ AddCSLuaFile("database/cl_database")
 include( "shared.lua" )
 include( "player.lua" )
 include( "database/database.lua" )
+include( "round.lua" )
+include( "console/lua" )
 include( "./addons/addons-API.lua" )
 
 function GM:PlayerConnect( name, ip )
