@@ -5,6 +5,7 @@ AddCSLuaFile("database/cl_database")
 include( "shared.lua" )
 include( "player.lua" )
 include( "database/database.lua" )
+include( "./addons/addons-API.lua" )
 
 function GM:PlayerConnect( name, ip )
 	print(name .. " has requested to join game")
