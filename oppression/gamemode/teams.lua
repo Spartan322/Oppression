@@ -1,11 +1,12 @@
-local teams = {}
+teams = {}
 
 teams[TEAM_CIVIL] = {name = "Civilians", color = Vector(0/255,255/255,0/255), dweapons = {"weapon_crowbar"}}
 teams[TEAM_FEDS] = {name = "Federal Agents", color = Vector(0/255,0/255,255/255), dweapons = {"weapon_pistol", "weapon_smg1"}}
 teams[TEAM_RESIS] = {name = "Resistance", color = Vector(255/255,0/255,0/255), dweapons = {"weapon_crowbar"}}
+teams[100] = {name = "Spectator", color = Vector(0/255,255/255,255/255), dweapons = {}}
 
 function ply:SetGamemodeTeam( n )
-  if not teams[n] then return end
+  if not teams[n] then n = 100 end
 
   self:SetTeam( n )
 
@@ -16,6 +17,7 @@ function ply:SetGamemodeTeam( n )
   end
 
   self:SetTeamWeapons()
+  self:Spectate()
 
   return true
 end
@@ -27,7 +29,7 @@ function ply:SetTeamWeapons()
   for k, wep in pairs(teams[n].dweapons) do
     self:Give(wep)
     local weps = string.gsub(wep,"weapon_","")
-    if not weps == "crowbar" 
+    if not weps == "crowbar" and weps then
       self:GiveAmmo(100,weps)
     end
   end
