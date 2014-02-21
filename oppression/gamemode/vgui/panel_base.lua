@@ -10,9 +10,7 @@ end
 
 function PANEL:Paint()
   draw.RoundedBox(6,50,50,self:GetWide(),self:GetTall(),Color(0,0,0,0))
-  draw.DrawText( self.OverheadText, self.OverheadFont, x, 0, self.OverheadColor, self.OverheadTextAlign );
-  vgui.Create("sb_"
- 
+  draw.DrawText( self.OverheadText, self.OverheadFont, x, 0, self.OverheadColor, self.OverheadTextAlign )
   return true
 end
 
