@@ -8,7 +8,6 @@ include( "player.lua" )
 include( "database/database.lua" )
 include( "round.lua" )
 include( "console/lua" )
-include( "./addons/addons-API.lua" )
 
 function GM:PlayerConnect( name, ip )
 	print(name .. " has requested to join game")
@@ -28,7 +27,7 @@ function GM:PlayerSpawn( ply )
 end
 
 function GM:PlayerAuthed( ply, steamID, uniqueID )
-	print(ply:Nick() .. " has been proven as a valid team account for Garry's Mod")
+	print(ply:Nick() .. " has been proven as a valid steam account for Garry's Mod")
 	ply:databaseCheck()
 end
 
