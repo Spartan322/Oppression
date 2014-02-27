@@ -2,7 +2,7 @@ local Round = {}
 Round.time = 0
 Round.round = 0
 
-function CreateRoundBase()
+local function CreateRoundBase()
     CreateConVar("opp_roundtime_seconds", "0")
     CreateConVar("opp_roundtime_mintues", "30")
     CreateConVar("opp_roundtime_hours", "0")
