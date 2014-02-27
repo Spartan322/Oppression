@@ -1,9 +1,9 @@
 con = {}
 con.text = ""
-con.rtime = Round:GetTime()
+con.rtime = GetRoundTable():GetTime()
 
 function con:AddText(text)
-	con.text += "[" .. con:GetRoundTime() .. "]" .. ": " .. text .. "\n"
+	con.text += "Oppression : [" .. con:GetRoundTime() .. "]" .. ": " .. text .. "\n"
 end
 
 function con:GetRoundTime()
@@ -19,3 +19,4 @@ function con:EndText()
 	print(con.text)
 	print("================= Round End ================="\n)
 end
+hook.Add("RoundOver", "EndPrint", con:EndText())
