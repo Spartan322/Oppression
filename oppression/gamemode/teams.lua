@@ -15,9 +15,13 @@ function ply:SetGamemodeTeam( n )
   elseif not teams[n].name == "Resistance" then
     self:SetPlayerColor( teams[n].color )
   end
-
+  
+  if n == 100 then
+    self:Spectate()
+    return true
+  end
   self:SetTeamWeapons()
-  self:Spectate()
+  
 
   return true
 end
