@@ -85,14 +85,14 @@ local function Round:IsRoundOver()
 end
 
 function Round:IsPrepare()
-    return self.hasStarted
+    return not self.hasStarted
 end
 
 local function Round:NotRound()
     if self:IsPrepare or self:IsRoundOver then
-        return false
-    else
         return true
+    else
+        return else
     end
 end
 
