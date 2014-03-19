@@ -39,7 +39,7 @@ end
 GM:PlayerDeath(victim, inflictor, attacker)
 	if victim == attacker then
 		con:AddText(victim:Nick() .. " commited suicide. The gamemode shall now contemplate why?")
-	elseif inflictor && attacker:Nick() then
+	elseif inflictor and attacker:Nick() then
 		con:AddText(victim:Nick() .. " was killed by " .. attacker:Nick() .. " who used a " .. inflictor:GetName())
 	else
 		con:AddText(victim:Nick() .. "was killed from an unknown object.\n" .. attacker:Nick() .. " was reported as killer and " inflictor:GetName() .. " as the murder weapon")
