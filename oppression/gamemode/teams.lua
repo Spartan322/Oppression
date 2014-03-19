@@ -33,7 +33,7 @@ function ply:SetTeamWeapons()
   for k, wep in pairs(teams[n].dweapons) do
     local weps = self:Give(wep)
     weps = weps:GetPrimaryAmmoType()
-    self:GiveAmmo(100,weps)
+    self:GiveAmmo(100,weps, true)
     end
   end
 end
