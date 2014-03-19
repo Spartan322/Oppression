@@ -17,6 +17,6 @@ end
 function con:EndText()
 	print("================= Round Begin =================\n")
 	print(con.text)
-	print("================= Round End ================="\n)
+	print("================= Round End =================\n")
 end
 hook.Add("RoundOver", "EndPrint", con:EndText())
