@@ -31,10 +31,9 @@ function ply:SetTeamWeapons()
   self:StripWeapons()
 
   for k, wep in pairs(teams[n].dweapons) do
-    self:Give(wep)
-    local weps = string.gsub(wep,"weapon_","")
-    if not weps == "crowbar" and weps then
-      self:GiveAmmo(100,weps)
+    local weps = self:Give(wep)
+    weps = weps:GetPrimaryAmmoType()
+    self:GiveAmmo(100,weps)
     end
   end
 end
