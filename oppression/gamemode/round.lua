@@ -146,8 +146,8 @@ function GM:RoundOver( round )
 end
 hook.Add( "RoundCheck", "RoundOver", RoundOver )
 function RoundCheck()
-	if	Round:ISRoundOver() then
-		hook.Call( "RoundOver", GAMEMODE, self.round )
+	if Round:IsRoundOver() then
+		hook.Call( "RoundOver", GAMEMODE, Round.round )
 	end
 end
 hook.Add("Think", "RoundCheck", RoundCheck)
