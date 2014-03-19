@@ -15,7 +15,6 @@ team.SetUp( TEAM_FEDS , "Federal Agents", Color(0,0,255) )
 team.SetUp( TEAM_RESIS , "Resistance", Color(255,0,0) )
 
 function GM:Initialize()
-	GetAddons()
 	self.BaseClass.Initialize( self )
-	print("Gamemode" .. oppress.name .."Version" .. oppress.version .. "started up")
+	print("Gamemode " .. oppress.name .." Version " .. oppress.version .. " started up")
 end 
