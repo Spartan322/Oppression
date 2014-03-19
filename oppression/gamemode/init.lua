@@ -14,8 +14,7 @@ function GM:PlayerConnect( name, ip )
 end
 
 function GM:PlayerInitialSpawn( ply )
-	print(ply:Nick() .. "'s entity has spawned for the first time on this map.")
-	con:AddText(ply:Nick() .. "'s entity has spawned for the first time on this map at " .. con:GetRoundTime())
+	con:AddText(ply:Nick() .. "'s entity has spawned for the first time on this map change")
 	ply:SetGamemodeTeam( 0 )
 end
 
@@ -23,14 +22,16 @@ function GM:PlayerSpawn( ply )
 
 	ply:SetTeamDefaultModel(ply:Team())
 	ply:SetTeamWeapons()
-	con:AddText(ply:Nick() .. " has respawned at " .. con:GetRoundTime())
+	con:AddText(ply:Nick() .. " has respawned")
 end
 
 function GM:PlayerAuthed( ply, steamID, uniqueID )
 	print(ply:Nick() .. " has been proven as a valid steam account for Garry's Mod")
+	con:AddText(ply:Nick() .. " validated")
 	ply:databaseCheck()
 end
 
 function GM:PlayerDisconnected( ply )
 	ply:databaseDisconnect()
+	con:AddText(ply:Nick() .. " disconnected from the server")
 end
