@@ -45,3 +45,8 @@ GM:PlayerDeath(victim, inflictor, attacker)
 		con:AddText(victim:Nick() .. "was killed from an unknown object.\n" .. attacker:Nick() .. " was reported as killer and " inflictor:GetName() .. " as the murder weapon")
 	end
 end
+
+GM:AddDeathNotice( victim, victimTeam, inflictor, attacker, attackerTeam ) 
+	local msg = victim .. " on " .. team.GetName(vicimTeam) .. " was killed by " .. attacker .. " who was on " .. team.GetName(attackerTeam) .. " from " .. inflictor
+	return msg
+end
