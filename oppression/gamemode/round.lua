@@ -46,8 +46,9 @@ local function Round:NiceTime()
     else
     	local tim = self.time/60
     	local seconds = self.time % 60
-    	return tim":"seconds
-   	end
+    	local msg = tim..":"..seconds
+    	return msg
+   end
 end
 
 local function Round:SetTime(tim)
