@@ -47,6 +47,6 @@ GM:PlayerDeath(victim, inflictor, attacker)
 end
 
 GM:AddDeathNotice( victim, victimTeam, inflictor, attacker, attackerTeam ) 
-	local msg = victim .. " on " .. team.GetName(vicimTeam) .. " was killed by " .. attacker .. " who was on " .. team.GetName(attackerTeam) .. " from " .. inflictor
+	local msg = victim:Nick() .. " on " .. team.GetName(vicimTeam) .. " was killed by " .. attacker:Nick() .. " who was on " .. team.GetName(attackerTeam) .. " from " .. inflictor:GetName()
 	return msg
 end
